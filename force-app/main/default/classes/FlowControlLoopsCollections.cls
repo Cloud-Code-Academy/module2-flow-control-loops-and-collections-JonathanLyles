@@ -29,19 +29,11 @@ public with sharing class FlowControlLoopsCollections {
      * @return "Hello World!" if x greater than y, otherwise return null.
      */
     public static String helloWorld(Integer x, Integer y) {
-<<<<<<< HEAD
-        String message = 'Hello World!';
-        if(x == null || y == null || x <= y){
-            return null;
-        } 
-        return message; // Replace null with the variable you used to store the result
-=======
         String result = 'Hello World!';
         if(x == null || y == null || y >= x){
             result = null;
         }
         return result;  
->>>>>>> 762b32959e2ebfd6935b63e58c649cede1b34bdc
     }
 
     /**
@@ -54,15 +46,6 @@ public with sharing class FlowControlLoopsCollections {
      * @return true if the person is eligible to vote, false otherwise.
      */
     public static Boolean votingEligibility(Integer age) {
-<<<<<<< HEAD
-        Boolean votingAge;
-        if(age < 18){
-            votingAge = false;
-        } else {
-            votingAge = true;
-        }
-        return votingAge; // Replace null with the variable you used to store the result
-=======
         Boolean isVotingAge;
         if(age>=18){
             isVotingAge = true;
@@ -70,7 +53,6 @@ public with sharing class FlowControlLoopsCollections {
             isVotingAge = false;
         }
         return isVotingAge;
->>>>>>> 762b32959e2ebfd6935b63e58c649cede1b34bdc
     }
 
     /**
@@ -85,15 +67,6 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
         Integer largestNum = null;
-<<<<<<< HEAD
-        if(num1 == null || num2 == null ){
-            return null;
-        }else if (num1 > num2){
-            return largestNum = num1;
-        }else{
-            return largestNum = num2;
-        }
-=======
         if(num1 == null || num2 == null){
             largestNum = null;
         }else if(num1>num2){
@@ -104,7 +77,6 @@ public with sharing class FlowControlLoopsCollections {
             largestNum = num2;
         }
         return largestNum;
->>>>>>> 762b32959e2ebfd6935b63e58c649cede1b34bdc
     }
 
     /**
@@ -118,17 +90,6 @@ public with sharing class FlowControlLoopsCollections {
     public static String checkNumber(Integer a) {
         String result;
         if(a == null){
-<<<<<<< HEAD
-            return null;
-        }else if (a == 0){
-            return result = 'Zero';
-        }else if (a < 0){
-            return result = 'Negative';
-        }else{
-            return result = 'Positive';
-        }
-        
-=======
             result = null;
         }else if(a == 0){
             result ='Zero';
@@ -138,7 +99,6 @@ public with sharing class FlowControlLoopsCollections {
             result ='Negative';
         }
         return result;
->>>>>>> 762b32959e2ebfd6935b63e58c649cede1b34bdc
     }
 
     /**
